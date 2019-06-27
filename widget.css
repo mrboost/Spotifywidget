@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family={{fontName}}');
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+    font-family:{{fontName}};
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+#container {
+    width: 130px;
+    min-height: 121px;
+    position: relative;
+	background:
+	linear-gradient(
+          rgba(0, 0, 0, .8), 
+          rgba(0, 0, 0, .8)
+        ),
+      url("{{bgImage}}");
+	background-position: center;
+	background-size: 400px 360px;
+	
+    margin: auto;
+    transition: opacity .4s ease, transform .4s ease, width .4s ease;
+    opacity: .1;
+	border-radius: 6px;
+    transform: translateX(-500px);
+	box-shadow: 0px 10px 20px 3px rgba(0, 0, 0, .8);
+}
+
+#container.raise {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#container.active {
+	width: 400px;
+}
+
+img {
+  opacity: 0;
+  width: 90px;
+  height: 92px;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+  animation: 2s girandomt infinite forwards linear;
+}
+
+img.active {
+    opacity: 1;
+}
+
+.cover {
+	padding-left: 20px;
+	padding-top: 15px;
+	width: 90px;
+	height: 90px;
+	position: relative;
+	z-index: 9;
+}
+
+.main {
+	position: absolute;
+	padding-left: 15px;
+	padding-top: 10px;
+	top: 0;
+	height: 118px;
+	width: 72%;
+	max-width: 499px;
+	overflow: hidden;
+	padding-right: 0px;
+	right: 0px;
+}
+
+#artists {
+	padding-left: 0px;
+	padding-top: 10px;
+    color:{{fontColor}};
+	font-weight: 400;
+	margin-top: 0;
+	margin-right: 0;
+	margin-left: 0px;
+	margin-bottom: 0;
+	font-size: 28px;
+	text-transform: uppercase;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75);
+}
+
+#name {
+  color:{{fontColor2}};
+	margin-top: 5px;
+	margin-right: 0;
+	margin-left: 0px;
+	margin-bottom: 0;
+	font-size: 48px;
+    font-weight: 400;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75);
+}
+
+h4 {
+    opacity: 0;
+    white-space: nowrap;
+    padding-left: 0px;
+    transform: translateY(-50px);
+    transition: opacity .4s ease, transform .4s ease;
+    display: inline-block;
+}
+h2 {
+    opacity: 0;
+    white-space: nowrap;
+    padding-left: 0px;
+    transform: translateY(50px);
+    transition: opacity .4s ease, transform .4s ease;
+    display: inline-block;
+}
+
+h4.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+h2.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+h4.drop {
+    transform: translateY(100px);
+}
+h2.drop {
+    transform: translateY(100px);
+}
+
+.artists-height-fix {
+    min-height: 20px;
+}
+
+h2.scrolling,
+h4.scrolling {
+    /* -webkit-animation: slide 30s linear infinite; */
+    position: absolute;
+    animation: slide 15s linear infinite;
+}
+
+@keyframes slide {
+    from {
+        /* left: 100%; */
+        transform: translateX(100%);
+    }
+    to {
+        /* left: -100%; */
+        transform: translateX(-100%);
+    }
+}
+@keyframes girandomt {
+  0% {
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    box-shadow: 0px 0px 30px 40px rgba(255, 255, 255, 0);
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "userId": {
+    "type": "mediarequest",
+    "label": "Spotify ID",
+    "value": "provider.key"
+    },
+  "fontName": {
+    "type": "googleFont",
+    "label": "Font name",
+    "value": "Passion One"
+    },
+  "bgImage": {
+    "type": "image-input",
+    "label": "Background Image",
+    "value": ""
+    },
+  "fontColor": {
+    "type": "colorpicker",
+    "label": "Artist Color",
+    "value": "rgb(163, 163, 163)"
+    },
+  "fontColor2": {
+    "type": "colorpicker",
+    "label": "Song color",
+    "value": "rgb(255, 254, 255)"
+  }
+}
