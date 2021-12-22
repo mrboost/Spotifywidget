@@ -1,1 +1,1 @@
-![My image](https://assets.codepen.io/3256958/Spotify+Widget.png)
+![My image](https://github.com/mrboost/Spotifywidget/blob/master/Spotify%20Widget.png)
