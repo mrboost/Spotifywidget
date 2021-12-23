@@ -3,7 +3,7 @@
 
 # Download Widget
 
-## [Download Widget](https://github.com/mrboost/Spotifywidget/raw/master/MrBoost%20Spotify%20Widget.zip)
+## [Download](https://github.com/mrboost/Spotifywidget/raw/master/MrBoost%20Spotify%20Widget.zip)
 
 ### Once downloaded. Extract the folder to where ever you would like. Once extracted, simply open Snip
 
